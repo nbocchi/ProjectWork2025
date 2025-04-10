@@ -1,0 +1,66 @@
+/* Insert here the common CSS */
+
+:root {
+    --main-dark: #131515;
+    --main-light: #eae6e5;
+    --main-highlight: #0e6ba8;
+    --secondary-highlight: #5fad41;
+}
+
+
+html,
+body {
+    margin: 0;
+    font-family: Goorm-sans, sans-serif;
+    background: var(--main-light);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+.navbar-container {
+    width: 100%;
+    height: fit-content;
+    align-content: center;
+    margin-bottom: 16px;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    background: var(--main-dark);
+    width: 100%;
+    height: fit-content;
+}
+
+.navbar-item, .navbar-item a {
+    font-size: 14pt;
+    font-family: Gyrotrope;
+    font-weight: bold;
+    color: var(--main-highlight);
+    width: fit-content;
+    height: fit-content;
+    transition-duration: 250ms;
+}
+
+.navbar-item a:hover, .navbar-item:hover {
+    text-decoration: none;
+    background: var(--secondary-highlight);
+    color: var(--main-light);
+}
+
+.right {
+    margin-left: auto;
+}
+
+.left {
+    margin-right: auto;
+}
