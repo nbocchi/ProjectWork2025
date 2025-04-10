@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Gyrotrope;
+    src: url(../fonts/GyrotropeVF.ttf);
+}
+
+@font-face {
+    font-family: Goorm-sans;
+    src: url(../fonts/goorm-sans-regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Goorm-sans;
+    src: url(../fonts/goorm-sans-medium.ttf);
+    font-weight:400;
+}
+@font-face {
+    font-family: Goorm-sans;
+    src: url(../fonts/goorm-sans-bold.ttf);
+    font-weight: bold;
+}

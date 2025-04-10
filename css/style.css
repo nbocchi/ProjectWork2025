@@ -1,0 +1,183 @@
+/* Insert here the common CSS */
+
+
+/* boilerplate */
+:root {
+    --main-dark: 19 21 21;
+    --main-light: 234 230 229;
+    --main-highlight: 95 173 65;
+    --secondary-highlight: 14, 107, 168;
+}
+
+
+html,
+body {
+    margin: 0;
+    font-family: Goorm-sans, sans-serif;
+    background: color-mix(in lab, rgb(var(--main-light)), rgb(var(--main-dark)) 25%);;
+    
+}
+
+button {
+    border: none;
+    background: inherit;
+    color: inherit;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    min-height: fit-content;
+    height: 45px;
+    width: 100%;
+    background: rgb(var(--main-dark));
+    display: flex;
+    flex-direction: row;
+}
+
+.navitem {
+    width: fit-content;
+    flex-grow: 1;
+    margin: auto 0;
+    height: 100%;
+}
+
+.navitem * {
+    font-size: 14pt;
+    font-family: Gyrotrope, sans-serif;
+    font-weight: bold;
+    color: rgb(var(--main-light));
+}
+
+
+.navitem button {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition-duration: 150ms;
+}
+
+.navitem button:hover, .navitem button:active {
+    background: rgb(var(--main-highlight));
+    text-shadow: 1px 1px rgb(var(--secondary-highlight)), 2px 2px rgb(var(--secondary-highlight));
+}
+
+.navtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navtitle div {
+    font-size: 15.5pt;
+    text-shadow: 1px 1px rgb(var(--secondary-highlight)), 2px 2px rgb(var(--secondary-highlight)), 3px 3px rgb(var(--main-highlight)), 4px 4px rgb(var(--main-highlight));
+}
+
+.navtitle > div {
+    margin: auto 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+/* Flashcard */
+
+.flashcard {
+    /* background: color-mix(in lab, rgb(var(--main-highlight)), rgb(var(--secondary-highlight)) 55%); */
+    background: color-mix(in srgb, rgb(var(--main-light)), transparent 50%);
+    border-radius: 12px;
+    padding: 8px;
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flashcard:nth-child(2n) {
+    flex-flow: row-reverse;
+}
+
+.flashcard img {
+    width: 128px;
+    border-radius: 12px;
+}
+
+.flashcard .profile-holder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.profile-holder {
+    transform: translateY(calc(-14pt / 2));
+    transition-duration: 150ms;
+}
+.profile-holder:hover {
+    transform: none;
+}
+
+.profile-holder div {
+    opacity: 0;
+    transition-duration: 150ms;
+}
+.profile-holder:hover div {
+    opacity: 1;
+}
+
+
+.flashcard-text {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    text-align: justify;
+    width: 100%;
+    font-size: 13pt;
+}
+
+/* slidein animation */
+
+.slide-in {
+    animation-duration: 500ms;  
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.slide-in-right {
+    animation-name: slide-in-right;
+}
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.slide-in-left {
+    animation-name: slide-in-left;
+}
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.flashcard {
+    animation-name: slide-in-left;
+    animation-duration: 500ms;  
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.flashcard:nth-child(2n) {
+    animation-name: slide-in-right;
+}
