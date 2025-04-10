@@ -3,8 +3,8 @@
 :root {
     --main-dark: #131515;
     --main-light: #eae6e5;
-    --main-highlight: #0e6ba8;
-    --secondary-highlight: #5fad41;
+    --main-highlight: #5fad41;
+    --secondary-highlight: #0e6ba8;
 }
 
 
@@ -13,51 +13,70 @@ body {
     margin: 0;
     font-family: Goorm-sans, sans-serif;
     background: var(--main-light);
+    
 }
 
-ul {
-    list-style-type: none;
+
+.navbar {
+    min-height: fit-content;
+    height: 45px;
+    width: 100%;
+    background: var(--main-dark);
+    display: flex;
+    flex-direction: row;
+}
+
+.navitem {
+    width: fit-content;
+    flex-grow: 1;
+    margin: auto 0;
+    height: 100%;
+}
+
+.navitem * {
+    font-size: 14pt;
+    font-family: Gyrotrope, sans-serif;
+    font-weight: bold;
+    color: var(--main-light);
+}
+
+button {
+    border: none;
+    background: inherit;
+    color: inherit;
+    cursor: pointer;
     margin: 0;
     padding: 0;
 }
 
-li {
-    display: inline;
-}
-
-.navbar {
-    overflow: hidden;
-    background-color: var(--main-dark);
-}
-
-.navbar .navitem {
-    color: var(--main-light);
-    text-align: center;
+.navitem button {
     text-decoration: none;
-    font-size: 14pt;
-    font-family: Gyrotrope, sans-serif;
-    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition-duration: 150ms;
 }
 
-.navbar a:hover {
-    background-color: var(--main-light);
-    color: var(--main-dark);
+.navitem button:hover, .navitem button:active {
+    background: var(--main-highlight);
+    text-shadow: 1px 1px var(--secondary-highlight), 2px 2px var(--secondary-highlight);
 }
 
-.navbar-left {
-    float: left;
+.navtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navtitle div {
+    font-size: 15.5pt;
+    
+    text-shadow: 1px 1px var(--secondary-highlight), 2px 2px var(--secondary-highlight), 3px 3px var(--main-highlight), 4px 4px var(--main-highlight);
 }
 
-.navbar-right {
-    float: right;
+.navtitle > div {
+    margin: auto 0;
 }
 
-.navitem-test {
-    background:
-        red;
-    width: 50px;
-    margin:
-        1px;
-    flex-grow: 1;
+.center-text {
+    text-align: center;
 }
-
