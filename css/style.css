@@ -99,7 +99,7 @@ button {
 
 .flashcard:nth-child(2n) {
     flex-flow: row-reverse;
-  }
+}
 
 .flashcard img {
     width: 128px;
@@ -137,4 +137,47 @@ button {
     text-align: justify;
     width: 100%;
     font-size: 13pt;
-  }
+}
+
+/* slidein animation */
+
+.slide-in {
+    animation-duration: 500ms;  
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.slide-in-right {
+    animation-name: slide-in-right;
+}
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.slide-in-left {
+    animation-name: slide-in-left;
+}
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.flashcard {
+    animation-name: slide-in-left;
+    animation-duration: 500ms;  
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.flashcard:nth-child(2n) {
+    animation-name: slide-in-right;
+}
