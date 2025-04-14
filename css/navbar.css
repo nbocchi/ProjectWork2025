@@ -1,0 +1,54 @@
+.navbar {
+    min-height: fit-content;
+    height: 45px;
+    width: 100%;
+    background: rgb(var(--main-dark));
+    display: flex;
+    flex-direction: row;
+}
+
+.navitem {
+    width: fit-content;
+    flex-grow: 1;
+    margin: auto 0;
+    height: 100%;
+}
+
+.navitem * {
+    font-size: 14pt;
+    font-family: Gyrotrope, sans-serif;
+    font-weight: bold;
+    color: rgb(var(--main-light));
+}
+
+
+.navitem button {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition-duration: 150ms;
+}
+
+.navitem button:hover, .navitem button:active {
+    background: rgb(var(--main-highlight));
+    text-shadow: 1px 1px rgb(var(--secondary-highlight)), 2px 2px rgb(var(--secondary-highlight));
+}
+
+.navtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navtitle div {
+    font-size: 15.5pt;
+    text-shadow: 1px 1px rgb(var(--secondary-highlight)), 2px 2px rgb(var(--secondary-highlight)), 3px 3px rgb(var(--main-highlight)), 4px 4px rgb(var(--main-highlight));
+}
+
+.navtitle > div {
+    margin: auto 0;
+}
+
+.center-text {
+    text-align: center;
+}

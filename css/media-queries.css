@@ -1,0 +1,33 @@
+@media only screen and (max-width: 700px) {
+    .flashcard-holder {
+        display: grid;
+        grid-template-areas:
+        "col1"
+        "col1" 
+        "col1"
+        "col1";
+        grid-template-columns: 1fr;
+    }
+
+    .profile-holder {
+        transform: none;
+    }
+    .profile-holder div {
+        opacity: 1;
+    }
+
+    .flashcard {
+        padding-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navitem *, .navtitle div {
+        font-size: 12pt;
+    }
+
+
+}
+
