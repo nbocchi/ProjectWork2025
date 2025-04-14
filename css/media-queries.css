@@ -9,13 +9,20 @@
         grid-template-columns: 1fr;
     }
 
+    .profile-holder {
+        transform: none;
+    }
+    .profile-holder div {
+        opacity: 1;
+    }
+
+    .flashcard {
+        padding-bottom: 10px;
+    }
 
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar {
-        height: 30px;
-    }
 
     .navitem *, .navtitle div {
         font-size: 12pt;
