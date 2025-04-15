@@ -11,10 +11,16 @@
     border-radius: var(--default-border-radius);
     padding: 8px;
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: calc(var(--profile-holder-font-size) / 2);
     margin: 12px;
     display: flex;
     flex-direction: row;
+    box-shadow: 0px 0px 2px var(--main-dark);
+    transition-duration: 150ms;
+}
+
+.flashcard:hover {
+    box-shadow: 0px 0px 4px var(--main-dark);
 }
 
 .flashcard:nth-child(2n) {
@@ -30,11 +36,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 14pt;
+    font-size: var(--profile-holder-font-size);
 }
 
 .profile-holder {
-    transform: translateY(calc(-14pt / 2));
+    transform: translateY(calc(var(--profile-holder-font-size) / -2));
     transition-duration: 150ms;
 }
 .profile-holder:hover {
@@ -44,9 +50,11 @@
 .profile-holder div {
     opacity: 0;
     transition-duration: 150ms;
+    color: var(--main-light);
 }
 .profile-holder:hover div {
     opacity: 1;
+    color: var(--main-dark);
 }
 
 
