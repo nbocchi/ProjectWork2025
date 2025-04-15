@@ -7,9 +7,8 @@
 }
 
 .flashcard {
-    /* background: color-mix(in lab, rgb(var(--main-highlight)), rgb(var(--secondary-highlight)) 55%); */
-    background: color-mix(in srgb, rgb(var(--main-light)), transparent 50%);
-    border-radius: 12px;
+    background: color-mix(in srgb, var(--main-light), transparent 50%);
+    border-radius: var(--default-border-radius);
     padding: 8px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -60,7 +59,7 @@
     font-size: 13pt;
 }
 
-/* Animation */
+/* Slide-in Animation */
 
 @keyframes hide-overflow {
     from {
@@ -71,22 +70,7 @@
     }
 }
 
-.hide-overflow {
-    animation-duration: 1000ms;  
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-name: hide-overflow;
-}
 
-.slide-in {
-    animation-duration: 500ms;  
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-.slide-in-right {
-    animation-name: slide-in-right;
-}
 @keyframes slide-in-right {
     from {
         transform: translateX(100%);
@@ -96,9 +80,6 @@
     }
 }
 
-.slide-in-left {
-    animation-name: slide-in-left;
-}
 @keyframes slide-in-left {
     from {
         transform: translateX(-100%);
@@ -108,9 +89,16 @@
     }
 }
 
+.hide-overflow {
+    animation-duration: calc(var(--animation-duration * 2));  
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-name: hide-overflow;
+}
+
 .flashcard {
     animation-name: slide-in-left;
-    animation-duration: 500ms;  
+    animation-duration: var(--animation-duration);  
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
