@@ -2,7 +2,7 @@
     min-height: fit-content;
     height: 45px;
     width: 100%;
-    background: rgb(var(--main-dark));
+    background: var(--main-dark);
     display: flex;
     flex-direction: row;
 }
@@ -18,7 +18,7 @@
     font-size: 14pt;
     font-family: Gyrotrope, sans-serif;
     font-weight: bold;
-    color: rgb(var(--main-light));
+    color: var(--main-light);
 }
 
 
@@ -31,8 +31,8 @@
 }
 
 .navitem button:hover, .navitem button:active {
-    background: rgb(var(--main-highlight));
-    text-shadow: 1px 1px rgb(var(--secondary-highlight)), 2px 2px rgb(var(--secondary-highlight));
+    background: var(--main-highlight);
+    text-shadow: 1px 1px var(--secondary-highlight), 2px 2px var(--secondary-highlight);
 }
 
 .navtitle {
@@ -42,7 +42,7 @@
 }
 .navtitle div {
     font-size: 15.5pt;
-    text-shadow: 1px 1px rgb(var(--secondary-highlight)), 2px 2px rgb(var(--secondary-highlight)), 3px 3px rgb(var(--main-highlight)), 4px 4px rgb(var(--main-highlight));
+    text-shadow: 1px 1px var(--secondary-highlight), 2px 2px var(--secondary-highlight), 3px 3px var(--main-highlight), 4px 4px var(--main-highlight);
 }
 
 .navtitle > div {
