@@ -1,23 +1,42 @@
 :root {
     --main-dark: rgb(19 21 21);
     --main-light: rgb(234 230 229);
-    --main-highlight: rgb(95 173 65);
-    --secondary-highlight: rgb(14, 107, 168);
+    --main-highlight: #5fad41;
+    --secondary-highlight: #0e6ba8;
 
     --default-border-radius: 12px;
     
     --animation-duration: 500ms;
+
+    --profile-holder-font-size: 13pt;
 }
 
+
+@keyframes rotatebg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 body {
     margin: 0;
     font-family: Goorm-sans, sans-serif;
-    background: color-mix(in lab, var(--main-dark), var(--secondary-highlight) 50%);
-    width: 100%;
-    height: 100%;
+	background: linear-gradient(-45deg, rgba(95, 173, 65, 1) 0%, rgba(14, 107, 168, 1) 100%);
+	background-size: 400% 400%;
+	animation: rotatebg 12s ease infinite;
+    width: 100vw;
+    height: 100vh;
     
 }
+
+
+
 
 button {
     border: none;
