@@ -12,15 +12,16 @@
     width: 100%;
 }
 
-.dark {
-    background: color-mix(in srgb, var(--main-dark), transparent 50%);
-    box-shadow: 0px 0px 2px var(--main-light);
-    color: var(--main-light);
+.flashcard-text {
+    width: auto;
 }
 
-.dark:hover {
-    box-shadow: 0px 0px 4px var(--main-light);
+.dark {
+    color: var(--main-dark); 
+    --main-light: rgb(19 21 21);
+    --main-dark: rgb(234 230 229);
 }
+
 
 .flashcard:nth-child(2n) {
     flex-flow: row
@@ -40,10 +41,29 @@
 }
 
 .skill {
-    flex-grow: 1;
+    width: 100%;
     text-align: center;
 }
 
 .skill .flashcard {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill .skill-icon {
+    
+    padding-top: 12px;
+}
+.skill .skill-icon img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 700px) {
+    #skills-grid {
+        flex-direction: column;
+    }
+
 }
