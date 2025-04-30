@@ -32,6 +32,7 @@
     height: 128px;
     object-fit: cover;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .flashcard .profile-holder {
