@@ -29,7 +29,10 @@
 
 .flashcard img {
     width: 128px;
+    height: 128px;
+    object-fit: cover;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .flashcard .profile-holder {
@@ -72,9 +75,11 @@
 @keyframes hide-overflow {
     from {
         overflow: hidden;
+        animation-name: hide-overflow;
     }
     to {
         overflow: inherit;
+        animation-name: rotatebg;
     }
 }
 
@@ -98,7 +103,7 @@
 }
 
 .hide-overflow {
-    animation-duration: calc(var(--animation-duration * 2));  
+    animation-duration: calc(var(--animation-duration) * 2);  
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-name: hide-overflow;

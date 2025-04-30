@@ -1,0 +1,11 @@
+#flashlight {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    mix-blend-mode: plus-lighter;
+    opacity: .7;
+    filter: blur(32px) brightness(200%);
+    pointer-events: none;
+  }
