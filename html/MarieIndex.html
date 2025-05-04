@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marie Aboa — Team Presentation</title>
+
+  <!-- 1) Stile comune di gruppo -->
+  <link rel="stylesheet" href="../css/style-generale.css">
+  <!-- 2) Stile personale di Marie -->
+  <link rel="stylesheet" href="../css/profilo-marie.css">
+   <!-- AOS locali -->
+   <link rel="stylesheet" href="../css/aos.css">
+</head>
+<body>
+   <!-- HERO VIDEO -->
+   <section class="hero-video">
+    <video autoplay muted loop class="hero-video__bg">
+      <source src="video/background.mp4" type="video/mp4">
+      <!-- fallback per browser che non supportano video -->
+      Il tuo browser non supporta il video in background.
+    </video>
+  </section>
+
+  <!-- HEADER di gruppo (collettivo) -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item"><a href="https://itsolivetti.it/">ITS Olivetti</a></li>
+        <li class="navbar__logo">Team Presentation</li>
+        <li class="navbar__item"><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- SEZIONE INDIVIDUALE DI MARIE -->
+  <main class="members">
+    <section id="profilo-marie" class="member" data-aos="fade-up">
+      <header class="member__header">
+        <h2 class="member__name">Marie Aboa</h2>
+        <p class="member__role">Studentessa Web Development</p>
+      </header>
+      <div class="member__content">
+        <figure class="member__avatar">
+          <img src="../img/avatar-marie.jpg" alt="Ritratto di Marie Aboa">
+        </figure>
+        <div class="member__bio">
+          <p>
+            <strong>Ciao, sono Marie Aboa.</strong>  
+            Appassionata di innovazione e sempre alla ricerca di nuove competenze nel digitale, ho scelto questo corso perché voglio unire la mia creatività alle tecnologie web.
+          </p>
+        
+          <p>In particolare, vorrei condividere con voi:</p>
+          <ul class="member__features">
+            <li>
+              <strong>Passioni:</strong> cucina lover, business e innovazione tecnologica
+            </li>
+            <li>
+              <strong>Perché ho scelto questo corso:</strong> integrare le mie competenze personali e la mia creatività con la programmazione
+            </li>
+            <li>
+              <strong>Aspettative:</strong> acquisire skill pratiche per connettere ogni mia abilità—dal business allo sviluppo—e trasformare le idee in soluzioni concrete
+            </li>
+          </ul>
+        
+          <p>
+            Il mio obiettivo è creare applicazioni web che riflettano la mia creatività e il mio spirito innovativo.  
+            
+            Seguimi su Instagram per conoscere una delle mie passioni:  
+            <a
+              href="https://instagram.com/afrodelicegastronomia"
+              target="_blank"
+              rel="noopener"
+              class="member__link"
+            >
+              @afrodelicegastronomia
+            </a>
+          </p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER di gruppo -->
+  <footer class="site-footer">
+    <p>© 2025 Gruppo XYZ. Tutti i diritti riservati.</p>
+  </footer>
+
+   <!-- qui inserisci AOS JS e l’inizializzazione -->
+   <script src="../css/aos.js"></script>
+   <script>
+     AOS.init({
+       duration: 700,  // durata animazione in ms
+       once: true      // anima solo al primo scroll
+     });
+   </script>
+
+</body>
+</html>
+
+

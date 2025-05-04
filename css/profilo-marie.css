@@ -1,0 +1,53 @@
+/* STILI SPECIFICI PER MARIE ABOA */
+
+/* 1. Header della scheda di Marie */
+#profilo-marie .member__header {
+    background: #8e44ad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* 2. Avatar tondo */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.05); }
+  }
+  #profilo-marie .member__avatar img {
+      animation: pulse 1s infinite;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      display: block;
+      margin: 1rem auto;
+    
+  }
+  
+
+  
+  /* 3. Bio e lista */
+  #profilo-marie .member__bio {
+    padding: 0 1rem 1rem;
+  }
+  #profilo-marie .member__bio ul {
+    list-style: disc inside;
+    margin: 1rem 0;
+  }
+  #profilo-marie .member__bio a {
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  /* 4. Layout desktop (tablet+) */
+  @media (min-width: 768px) {
+    #profilo-marie .member__content {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  }
+  
+   
