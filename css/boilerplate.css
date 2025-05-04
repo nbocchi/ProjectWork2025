@@ -51,3 +51,39 @@ button {
     color: var(--main-light);
     background: var(--main-dark);
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--main-dark);
+    height: 12pt;
+    display: flex;
+    flex-direction: row;
+    color: var(--main-light);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 10pt;
+}
+
+.footer div, .footer p {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+
+#gokuholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+}
+.goku {
+    position: absolute;
+    width: 128px;
+}
