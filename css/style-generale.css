@@ -53,8 +53,6 @@
   .member {
     background: rgba(255,255,255,0.1);
     border-radius: 8px;
-    /* aumenta la larghezza massima fino a 400px o al 90% del contenitore */
-    max-width: 400px;
     width: 90%;
     overflow: visible;       /* lascia visibile il contenuto che esce */
     margin: 1rem;            /* spazio intorno alla card */
