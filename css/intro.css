@@ -34,3 +34,23 @@
     background: color-mix(in srgb, var(--main-dark), transparent 50%);
     color: var(--main-light);
 }
+
+@keyframes glow-animation {
+    0% {
+        box-shadow: inherit;
+    }
+    50% {
+        box-shadow: 0px 0px 4px var(--main-light);
+    }
+    100% {
+        box-shadow: inherit;
+    }
+}
+
+.glow {
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-name: glow-animation;
+
+}

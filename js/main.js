@@ -47,3 +47,13 @@ function goku() {
         image.remove();
     }, (Math.random() * 5000) + 5000);
 }
+
+
+let desc = document.querySelectorAll('.desc')[0];
+
+function highlightAboutUs() {
+    desc.scrollIntoView();
+    desc.classList.add("glow");
+    setTimeout(() => {
+        desc.classList.remove("glow");}, 1000)
+}
